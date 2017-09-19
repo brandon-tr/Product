@@ -1,0 +1,4 @@
+ <div *ngFor="let product of products, let i = index">
+  {{product.name}} 
+  {{product.price}} <a (click)="Edit(i)">edit</a> <a (click)="Delete(i)">delete</a>
+ </div>
